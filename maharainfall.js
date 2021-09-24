@@ -25,7 +25,7 @@ let newChart_6 = new Chart(myChart_6, {
     plugins: {
       title: {
         display: true,
-        text: 'Average month-wise Rainfall in Maharashtra over last 30 years in %',
+        text: 'Average month-wise Rainfall in Maharashtra over last 30 years in (%)',
         color: 'black',
         font: {
           family: "Montserrat",
