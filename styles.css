@@ -1,0 +1,291 @@
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  /* opacity: 0.6; */
+  text-align: center;
+}
+
+.row>* {
+  display: grid;
+  vertical-align: middle;
+}
+
+.title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bolder;
+  padding-top: 15%;
+  padding-bottom: 15%;
+}
+
+ul {
+  padding-right: 5%;
+}
+
+.nav-item {
+  margin: 3%;
+  /* font-size: 8%; */
+}
+
+.navbar {
+  padding-left: 3%;
+  font-family: Montserrat;
+  font-weight: bolder;
+}
+
+#container {
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://content.api.news/v3/images/bin/9da010285ed2df52012e9db32f3bf03b");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#temp{
+  padding-bottom: 5%;
+  background-image: url("https://kabre.cenat.ac.cr/wp-content/uploads/2015/11/triangle-background-17-1024x492.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.information{
+  text-align: justify;
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  padding: 5%;
+  font-family: Ubuntu;
+  background-image: url("note.png");
+  background-repeat: no-repeat;
+  background-size: 150% 150%;
+  background-position: center;
+
+}
+.firstgraph {
+  width: 90%;
+  height: 80%;
+  margin: 7%;
+  border: 1.5px solid #000;
+  border-radius: 2%;
+  box-shadow: 10px 10px rgba(0, 0, 0, .15);
+  transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+  cursor: pointer;
+  background-color: #fff;
+}
+
+
+.firstgraph:hover {
+
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+#myChart{
+  height: 95% !important;
+}
+
+.secondgraph {
+  width: 90%;
+  height: 70%;
+  margin-left: 5%;
+  margin-top: 8%;
+  border: 1.5px solid #000;
+  border-radius: 2%;
+  background-color: #fff;
+  box-shadow: 10px 10px rgba(0, 0, 0, .15);
+  transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+  cursor: pointer;
+}
+
+.secondgraph:hover {
+
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+
+
+.thirdgraph {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  border: 1.5px solid #000;
+  border-radius: 2%;
+  box-shadow: 10px 10px rgba(0, 0, 0, .15);
+  transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+  cursor: pointer;
+  background-color: #fff;
+}
+
+
+.thirdgraph:hover {
+
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+#thirdChart {
+  height: 400px;
+}
+
+
+
+.fourtgraph{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+
+  border: 1.5px solid #000;
+  border-radius: 2%;
+  box-shadow: 10px 10px rgba(0, 0, 0, .15);
+  transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.fourtgraph:hover{
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+center{
+  height: 400px;
+}
+
+#humidity{
+  padding: 5% 0%;
+ background-image: url("https://media.istockphoto.com/photos/window-glass-with-high-air-humidity-large-drops-drip-background-of-picture-id1073982586?k=20&m=1073982586&s=170667a&w=0&h=Sx1MvIt_hOqz2sVbf0ojhmkvJ5W6zbRr7brFrRHCi2I=");
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-attachment: fixed;
+}
+
+.fifthGraph{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  border: 1.5px solid #000;
+  border-radius: 2%;
+  box-shadow: 10px 10px rgba(0, 0, 0, .15);
+  transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+  cursor: pointer;
+  background-color: #fff;
+}
+
+#rain{
+  background-image: url("https://wallpapercave.com/wp/5QKWFI8.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 1%;
+  padding-bottom: 2%;
+}
+
+.sixthGraph{
+  width: 80%;
+  margin-left: 20%;
+  background-color: #fff;
+  border: 1.5px solid #000;
+  border-radius: 2%;
+  box-shadow: 10px 10px rgba(0, 0, 0, .15);
+}
+
+#sixthGraph{
+  width: 95%;
+}
+
+.any{
+  margin-bottom: 5%;
+  margin-top: 3%;
+}
+
+.disclaimer{
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+  padding-top: 3%;
+}
+
+#footer{
+  background-color: #ECFCFF;
+  font-family: Montserrat;
+  padding-top: 1%;
+  padding-bottom: 0.2%;
+}
+
+.Copyright{
+  font-family: Montserrat;
+  font-weight: bolder;
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 660px) {
+  #container {
+    height: 40vh;
+  }
+
+  .firstgraph {
+    flex-basis: 100%;
+    width: 80%;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #myChart{
+    height: 230px;
+  }
+
+  .secondgraph {
+
+    width: 80%;
+    height: 230px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+/*
+  #secondChart{
+    height: 200px !important;
+  } */
+
+  #thirdChart{
+    height: 250px !important;
+  }
+
+  .thirdgraph{
+
+    margin-top: 10%  !important;
+    height: 280px;
+  }
+
+  #fourthChart{
+    height: 250px !important;
+  }
+
+  .fourtgraph{
+    height: 280px;
+  }
+
+  .information{
+    margin-bottom: 3%;
+  }
+
+  .sixthGraph{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <title>Weather Report</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <section id="container">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Weather Dashboard</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <div class="row">
+                <div class="col lg-12">
+                  <i class="fas fa-thermometer-half"></i>
+                </div>
+                <div class="col lg-12">
+                  <a class="nav-link" aria-current="page" href="#temp">Temperature</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="row">
+                <div class="col lg-12">
+                  <i class="fas fa-humidity"></i>
+                </div>
+                <div class="col lg-12">
+                  <a class="nav-link" aria-current="page" href="#humidity">Humidity</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="row">
+                <div class="col lg-12">
+                  <i class="fas fa-cloud-sun-rain"></i>
+                </div>
+                <div class="col lg-12">
+                  <a class="nav-link" aria-current="page" href="#rain">Rain</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="title">
+      <h1>WELCOME TO OUR WEATHER PORTAL</h1>
+    </div>
+  </section>
+  <section id="temp">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="firstgraph" data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000">
+          <canvas id="myChart"></canvas>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="information" data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000">
+          <p style="padding-top: 6%">
+            Temperature is a physical quantity. At a fundamental level,
+            temperature is related to the kinetic energy of atoms and
+            molecules. India is one of the most climatically diverse countries
+            in the world; so the temperature varies largely based on the
+            geographical location and time of the year. From desert in the
+            north-west to the sea in the south uptill the himalayas, the range
+            is fluctuous. India's lowest recorded temperature was −60.0 °C in
+            Dras, Ladakh; and the highest temperature ever recorded in India
+            occurred on 19 May 2016 in Phalodi, Jodhpur District, Rajasthan at
+            51.0 °C
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="information" data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000">
+          <p>
+            The Climate of Mumbai is a tropical, wet and dry climate. Mumbai's
+            climate can be best described as moderately hot with high level of
+            humidity. Its coastal nature and tropical location ensure
+            temperatures do not fluctuate much throughout the year. The
+            highest temperature ever recorded in Mumbai's history is 42.2 °C ,
+            on 14 April 1952. While the lowest is 7.4 °C, on 22 January 1962,
+            both of which were recorded at the airport. The mean average
+            temperature is 27.2 °C. The mean maximum average temperatures is
+            about 32 °C in summer and 30 °C in winter, while the average
+            minimums are 25 °C in summer and 18 °C in winter.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="secondgraph" data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000">
+          <canvas id="secondChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <div class="thirdgraph" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
+      <center>
+        <canvas id="thirdChart"></canvas>
+      </center>
+    </div>
+  </section>
+
+  <section id="humidity">
+    <div class="information" style="margin-top: 1%; margin-bottom: 5%">
+      <p>
+        Humidity is the concentration of water vapour present in the air.
+        Water vapor, the gaseous state of water, is generally invisible to the
+        human eye. Humidity depends on the temperature and pressure of the
+        surroundings. Relative humidity is most widely used measurement unit.
+        The relative humidity unit measures how much water the air can hold
+        over a fairly wide temperature range, and it measures how much
+        moisture is currently in the air. It’s represented by a percentage.
+        100-percent represents the air being at its full capacity of moisture,
+        and 0-percent represents air that doesn’t have any moisture in it.
+        Humidity plays an important role for surface life. For animal life
+        dependent on perspiration (sweating) to regulate internal body
+        temperature, high humidity impairs heat exchange efficiency by
+        reducing the rate of moisture evaporation from skin surfaces.
+      </p>
+    </div>
+    <div class="fourtgraph" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1000">
+      <center>
+        <canvas id="fourthChart"></canvas>
+      </center>
+    </div>
+  </section>
+
+  <section id="rain">
+    <div class="row any">
+      <div class="col-lg-6">
+        <div class="sixthGraph" data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000">
+          <center>
+            <canvas id="sixthGraph"></canvas>
+          </center>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="information" data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000">
+          Maharashtra has a tropical climate, with three distinct seasons: 
+          summer (March–May), monsoon (June–September), and winter (October–February). 
+          However, dew and hail also occur sometimes, depending on seasonal weather. 
+          The winter between October to February is followed by summer between March and May
+          and the monsoon season between June and September. Ratnagiri district receives the
+          highest average rainfall whereas Ahmednagar receives the lowest. Mean rainfall during 
+          monsoon has been 1,020.7mm and 1,146.5mm annually for the state, which means over 89%
+          of annual rain is received during monsoon.
+        </div>
+      </div>
+    </div>
+    <div class="information" style="margin-top: 1%; margin-bottom: 5%">
+      <p>
+        The rain in India is predominantly attributed to the monsoon.
+        Usually, the term monsoon is used to refer to the rainy phase of a seasonally changing pattern,
+        although technically there is also a dry phase. The term is also
+        sometimes used to describe locally heavy but short-term rains.
+        The monsoon of South Asia is among several geographically distributed global monsoons.
+        It affects the Indian subcontinent, where it is one of the oldest and most anticipated
+        weather phenomena and an economically important pattern every year from June through September.
+        Mawsynram receives the highest rainfall in India. It is reportedly the wettest place on Earth,
+        with an average annual rainfall of 11,872 millimetres. Jaisalmer district located in the state
+        of Rajasthan has the lowest annual rainfall in India. It has a rainfall measuring upto just a
+        small number of 8.3 cms. Ruyli that is located in Jaisalmer district of Rajasthan is particularly
+        known to receive the lowest amount of rainfall.
+      </p>
+    </div>
+    <div class="fifthGraph" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
+      <center>
+        <canvas id="fifthChart"></canvas>
+      </center>
+    </div>
+    <p class="disclaimer">Disclaimer- The website host do not claim the authenticity of the data mentioned above.<br>
+      We rely on multiple sources to find the data.<br> We are not responisible for any discrepancy 
+      in this statistics.</p>
+  </section>
+  
+  <footer id="footer">
+    <p class="Copyright">Created by Sumit and Atharva ©2021</p>
+  </footer>
+
+  <script src="charttt.js" charset="utf-8"></script>
+  <script src="second.js" charset="utf-8"></script>
+  <script src="states.js" charset="utf-8"></script>
+  <script src="fourth.js" charset="utf-8"></script>
+  <script src="rain.js" charset="utf-8"></script>
+  <script src="maharainfall.js" charset="utf-8"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+    });
+  </script>
+</body>
+
+</html>
