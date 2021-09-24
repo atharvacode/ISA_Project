@@ -62,6 +62,6 @@ let newChart_2 = new Chart(myChart_2, {
         },
         cornerRadius: 5,
         responsive: true,
-        maintainAspectRatio: false,
+        maintainAspectRatio: true,
 
       }});
