@@ -4,7 +4,7 @@ let maharaindata = {
     tension: 0.5,
     fill: false,
     label: 'Rainfall in %',
-    data: ['21','33','28','18','11'],
+    data: ['21%','33%','28%','18%','11%'],
     backgroundColor: ["#98BDFF", "#A2CDCD","#284E78","#93B5C6","#28B5B5"],
     borderColor: "#B5DEFF",
 
