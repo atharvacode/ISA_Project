@@ -233,6 +233,11 @@ center{
   #container {
     height: 40vh;
   }
+  
+  .title{
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
 
   .firstgraph {
     flex-basis: 100%;
