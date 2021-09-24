@@ -72,7 +72,7 @@ let newChart = new Chart(myChart, {
 
 
     cornerRadius: 5,
-    maintainAspectRatio: true,
+    maintainAspectRatio: false,
   },
 
 
